@@ -1,0 +1,12 @@
+header{
+    text-align: center;
+    color:white;
+    font-size: 4rem;
+    width:100%
+}
+html{
+    background-image: url(kassadin_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
