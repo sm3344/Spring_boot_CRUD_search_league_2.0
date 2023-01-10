@@ -11,14 +11,34 @@ header{
     font-size: xxx-large;
     text-align:center;
     width:50%;
+    font-weight: bold;
 }
 
 body{
     background-image: url("../img/kassadin_background.jpg");
 }
-p{
+
+h1{
+    color:white !important;
     font-size: xx-large;
+    text-align:center;
+    width:50%;
+    font-weight: bold;
+}
+h2{
+    color: ghostwhite !important;
+    font-size: xx-large;
+    text-align:center;
+    width:50%;
+    font-weight: bold;
+}
+
+p{
+    font-size: x-large;
     color: white;
     text-align: left;
     width:50%;
 }
+
+
+
