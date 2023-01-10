@@ -38,8 +38,6 @@ public class StudentController {
         return "create_student";
     }
 
-
-
     @PostMapping("/students")
     public String saveStudent(@ModelAttribute("student")Student student){
         studentRepository.save(student);

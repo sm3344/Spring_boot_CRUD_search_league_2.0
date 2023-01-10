@@ -1,0 +1,24 @@
+nav{
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+}
+
+header{
+    color:white;
+    background-size: cover;
+    font-size: xxx-large;
+    text-align: center;
+}
+
+body{
+    background-image: url("../img/kassadin_background.jpg");
+}
+.row{
+    color:white;
+}
+
+.tcontainer{
+    color:white;
+}

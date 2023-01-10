@@ -1,17 +1,23 @@
+
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="ISO-8859-1">
   <title>My Students</title>
+  <link th:href="@{/css/students.css}" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-light">
+<nav class="navbar navbar-expand-sm">
 
   <!-- Links -->
   <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" th:href="@{/}">Home</a>
+    </li>
+
     <li class="nav-item">
       <a class="nav-link" th:href="@{/students}">Student Management</a>
     </li>
@@ -20,9 +26,9 @@
 
 </nav>
 
-<div class = "container">
+<div class = "tcontainer">
   <div class = "row">
-    <div class = "col-Lg-6 coL-md-6 col-sm-6 container justify-content-center card">
+    <div class = "col-Lg-6 coL-md-6 col-sm-6 container">
       <h1 class = "text-center"> Update Student </h1>
       <div class ="card-body">
         <form th:action="@{/students/{id}(id=${student.id})}" th:object="${student}" method ="POST">
