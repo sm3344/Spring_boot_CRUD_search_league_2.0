@@ -1,0 +1,67 @@
+header {
+    background-color: darkblue;
+    width: 50%;
+    position: fixed;
+
+}
+
+
+.nav{
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+}
+
+#container-background {
+    background-image: url("../img/kassadin_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+h1{
+    color:white !important;
+    font-size: xx-large;
+    text-align:center;
+    width:50%;
+    font-weight: bold;
+}
+
+h2{
+    color:white !important;
+    font-size: xx-large;
+    text-align:left;
+    width:50%;
+    font-weight: bold;
+}
+
+.slider_container .container{
+    max-width: 700px;
+    margin-left: 50px;
+}
+
+
+.img_box img{
+    width: 60%;
+    height: 50%;
+}
+
+.slider_container .video_slider{
+    padding: 50px 0;
+}
+
+.slider_container .swiper-button-prev{
+    color: white;
+}
+
+.slider_container .swiper-button-next{
+    color: white;
+}
+
+
+
+
+
+

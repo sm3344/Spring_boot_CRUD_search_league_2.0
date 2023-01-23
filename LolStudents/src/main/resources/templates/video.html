@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- Video page -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title >
+        League Student DataBase
+    </title>
+    <link th:href="@{/css/video.css}" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+
+</head>
+
+<header>
+<nav class="navbar navbar-expand-sm">
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" th:href="@{/}">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" th:href="@{/students}">Student Management</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" th:href="@{/video}">Videos</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+</header>
+
+
+
+
+<body>
+
+<div id="container-background">
+
+    <div id="container">...</div>
+    <br>
+    <br>
+<h1>
+    Gameplay videos
+</h1>
+<section class="slider_container">
+    <h2>Favorite video</h2>
+    <div class= "container">
+        <div class= "swiper video_slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <a href="https://www.youtube.com/watch?v=-OlOZpqkA3o" target="_blank">
+                            <img th:src="@{/img/Kyle.jpg}"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img th:src="@{/img/Kyle.jpg}">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img th:src="@{/img/Kyle.jpg}">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img th:src="@{/img/Kyle.jpg}">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img th:src="@{/img/Kyle.jpg}">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <h2>Kassadin video</h2>
+    <div class= "container">
+        <div class= "swiper video_slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img th:src="@{/img/Kyle.jpg}">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img th:src="@{/img/Kyle.jpg}">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img th:src="@{/img/Kyle.jpg}">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img th:src="@{/img/Kyle.jpg}">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img th:src="@{/img/Kyle.jpg}">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <h2>Comeback video</h2>
+    <div class= "container">
+        <div class= "swiper video_slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img th:src="@{/img/Kyle.jpg}">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img th:src="@{/img/Kyle.jpg}">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img th:src="@{/img/Kyle.jpg}">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img th:src="@{/img/Kyle.jpg}">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img th:src="@{/img/Kyle.jpg}">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+</div>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script type="text/javascript">
+    let swiper = new Swiper(".video_slider", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+
+            },
+            768: {
+                slidesPerView: 2,
+
+            },
+            1024: {
+                slidesPerView: 3,
+
+            },
+
+        },
+
+    });
+</script>
+</body>
+</html>

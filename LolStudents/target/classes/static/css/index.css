@@ -16,6 +16,9 @@ header{
 
 body{
     background-image: url("../img/kassadin_background.jpg");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1{
@@ -37,7 +40,9 @@ p{
     font-size: x-large;
     color: white;
     text-align: left;
+    margin-left: 25px;
     width:50%;
+
 }
 
 

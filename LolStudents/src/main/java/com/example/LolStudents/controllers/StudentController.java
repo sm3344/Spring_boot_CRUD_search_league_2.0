@@ -23,6 +23,11 @@ public class StudentController {
     public String homePage(){
         return "index";
     }
+
+    @RequestMapping("/video")
+    public String video(){
+        return "video";
+    }
     @RequestMapping({"/students"})
     public String searchStudent(Model model, @Param("keyword") String keyword) {
         List<Student> listStudent = studentService.listAll(keyword);
@@ -64,15 +69,12 @@ public class StudentController {
         return "redirect:/students";
     }
 
-    @GetMapping("/students/{id}")
+    @RequestMapping("/students/{id}")
     public String deleteStudent(@PathVariable Long id, Model model){
         studentRepository.deleteById(id);
         model.addAttribute("student", studentRepository.getById(id));
         return "redirect:/students";
     }
-
-
-
 
 
 }
